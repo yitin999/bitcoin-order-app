@@ -37,13 +37,3 @@ jobs:
           name: linting tool report
           path: |
             ./JSHint-report
-
-Create a new scripts directory on the root directory of your project folder
-
-Under the scripts folder create a jshint script file with the below's content. Filename : jshint-script.sh
-
-#!/bin/bash
-
-jshint --exclude="node_modules/" --reporter=unix . > JSHint-report
-
-echo $? > /dev/null
